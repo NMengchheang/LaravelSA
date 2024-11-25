@@ -12,6 +12,7 @@
                 <h2 class="text-center mb-5">Register List</h2>
                 <a href="/" class="btn btn-primary">Back</a>
                 <table class="table table-dark table-hover">
+
                     <thead>
                         <tr>
                         <th scope="col">#</th>
@@ -31,7 +32,7 @@
                                 <td> ---  </td>
                                 <td> PP </td>
                                 <td>
-                                    <a type="button" class="btn btn-primary">Edit</a>
+                                    <a type="button" class="btn btn-primary" href="/get-edit?id={{ $item->id }}">Edit</a>
                                     <a type="button" class="btn btn-danger" href="/get-confirmation?id={{ $item->id }}">Delete</a>
                                     
                                 </td>
@@ -39,6 +40,7 @@
                         @endforeach
                         
                     </tbody>
+                    
                 </table>
             </div>
             

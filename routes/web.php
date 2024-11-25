@@ -18,3 +18,6 @@ Route::post('/register', [\App\Http\Controllers\RegisterController::class, "doRe
 Route::get('/register-list', [\App\Http\Controllers\RegisterController::class, "registerList"]);
 Route::get('/get-delete', [\App\Http\Controllers\RegisterController::class, "getDelete"]);
 Route::get('/get-confirmation', [\App\Http\Controllers\RegisterController::class, "confirmationDelete"]);
+
+
+Route::get('/get-edit', [\App\Http\Controllers\RegisterController::class, "getEdit"]);

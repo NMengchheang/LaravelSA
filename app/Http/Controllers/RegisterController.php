@@ -79,4 +79,17 @@ class RegisterController extends Controller {
         );
     }
 
+    public function getEdit(Request $request) {
+        $user_id = $request->id;
+        
+        // Fetch the specific user by ID
+        $user = DB::table('users')->where('id', $user_id)->first();
+        
+        return view('register_edit', 
+            [
+                "item" => $user
+            ]
+        );
+    }
+
 }
